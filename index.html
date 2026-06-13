@@ -3,101 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Taste of Travel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fcf9f5; /* Warm, soft cream background */
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+
+            color: #8B4513; /* Deep warm brown */
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .authors {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        h2 {
+
+            color: #D2691E; /* Chocolate/Orange tone */
+            border-bottom: 2px solid #f0e0d0;
+            padding-bottom: 8px;
+            font-size: 1.8rem;
+        }
+        h3 {
+            color: #A0522D;
+            font-size: 1.4rem;
+            margin-top: 25px;
+        }
+
+        h4 {
+            color: #333;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            border-left: 4px solid #D2691E;
+            padding-left: 10px;
+        }
+        blockquote {
+            background-color: #fff5ea;
+            border-left: 5px solid #D2691E;
+            margin: 20px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            border-radius: 4px;
+        }
+
+        .recipe-section {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-section {
+                grid-template-columns: 1fr; /* Stack on small screens */
+
+            }
+        }
+        ul, ol {
+
+            padding-left: 20px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+
+        li {
+
+            margin-bottom: 8px;
+
+        }
+
+
+
+        /* Image Gallery Styling */
+
+        .image-gallery {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+
+            justify-content: center;
+
+        }
+
+
+
+        .image-gallery img {
+
+            width: 100%;
+
+            height: auto;
+
+            max-height: 250px;
+
+            object-fit: cover; /* Keeps images crisp and perfectly cropped */
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+            transition: transform 0.2s ease;
+
+        }
+
+
+
+        .image-gallery img:hover {
+
+            transform: scale(1.02); /* Subtle hover effect */
+
+        }
+
+
+
+        /* Table Styling */
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            margin: 20px 0 30px 0;
+
+            background: #fff;
+
+            border-radius: 8px;
+
+            overflow: hidden;
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+        }
+
+
+
+        th, td {
+
+            padding: 12px 15px;
+
+            text-align: left;
+
+        }
+
+
+
+        th {
+
+            background-color: #8B4513;
+
+            color: white;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            font-size: 0.85rem;
+
+            letter-spacing: 0.5px;
+
+        }
+
+
+
+        tr {
+
+            border-bottom: 1px solid #eee;
+
+        }
+
+
+
+        tr:nth-child(even) {
+
+            background-color: #fcfaf7;
+
+        }
+
+
+
+        /* Footer Metadata */
+
+        .meta-info {
+
+            background: #f9f9f9;
+
+            padding: 15px;
+
+            border-radius: 6px;
+
+            font-size: 0.95rem;
+
+            border: 1px solid #eee;
+
+        }
+
+
+
+        .meta-info p {
+
+            margin: 5px 0;
+
+        }
+
+    </style>
+
 </head>
+
+
+
 <body>
 
-    <header>
-        <h1>LOGO</h1>
-        <nav>
+
+
+<div class="container">
+
+
+
+    <h1>Embark on a Culinary Adventure</h1>
+
+    <p class="authors"><b>Authors:</b> Dharyl Nathaly Baba & Jonash Maravilla</p>
+
+
+
+    <h2>Discover the Flavors of the Philippines</h2>
+
+
+
+    <h3>Adobo: The Heart & Soul of Filipino Cuisine!</h3>
+
+
+
+    <p>
+
+        Adobo is one of the most beloved Filipino dishes, celebrated for its savory, tangy, and slightly sweet flavor.
+
+        Made with meat (commonly chicken or pork) simmered in vinegar, soy sauce, garlic, and bay leaves, it embodies
+
+        the heart of Filipino home cooking.
+
+    </p>
+
+
+
+    <blockquote>
+
+        "Adobo is the soul of Filipino cooking — simple ingredients, slow simmering, and a flavor that feels like home."
+
+        <br>– Filipino Food Enthusiast
+
+    </blockquote>
+
+
+
+    <div class="recipe-section">
+
+        <div>
+
+            <h4>Ingredients:</h4>
+
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+
+                <li>Chicken or Pork – 1 kg</li>
+
+                <li>Soy Sauce – 1/2 cup</li>
+
+                <li>Vinegar – 1/2 cup</li>
+
+                <li>Garlic – 6 cloves</li>
+
+                <li>Bay Leaves – 3 leaves</li>
+
+                <li>Peppercorns – 1 tsp</li>
+
             </ul>
-        </nav>
-    </header>
 
-    <section class="hero" id="home">
-        <div class="hero-img-placeholder">
-            <div class="cross-box"></div>
+
+
+            <h4>Preparation:</h4>
+
+            <ol>
+
+                <li>Marinate meat in soy sauce, vinegar, garlic, and peppercorns for 30 minutes.</li>
+
+                <li>Simmer the mixture with bay leaves until meat is tender.</li>
+
+                <li>Allow sauce to reduce until rich and flavorful.</li>
+
+                <li>Adjust seasoning to taste.</li>
+
+                <li>Serve hot with steamed rice.</li>
+
+            </ol>
+
+
+
+            <h4>Cooking Tips:</h4>
+
+            <ul>
+
+                <li>Use a mix of chicken and pork for a richer flavor.</li>
+
+                <li>Let the Adobo rest overnight — it tastes even better the next day.</li>
+
+            </ul>
+
         </div>
-        <div class="hero-text">
-            <h1>My Name</h1>
-            <p>BSIT Student</p>
-            <button type="button">Contact Me</button>
+
+
+
+        <div class="image-gallery">
+
+            <img src="adobopic1.png" alt="Adobo Dish">
+
+            <img src="adobopic2.png" alt="Adobo Serving">
+
         </div>
-    </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        </section>
+    </div>
 
-    <section id="projects">
-        <h2>My Projects/Skills</h2>
-        
-        <div class="grid">
-            <article class="project-card">
-                <div class="card-img-placeholder"><div class="cross-box"></div></div>
-                <h3>&lt;h3&gt;</h3>
-                <span class="tag">&lt;h&gt;</span>
-                <p>&lt;p&gt; Project description goes here.</p>
-            </article>
 
-            <article class="project-card">
-                <div class="card-img-placeholder"><div class="cross-box"></div></div>
-                <h3>&lt;h3&gt;</h3>
-                <span class="tag">&lt;h&gt;</span>
-                <p>&lt;p&gt; Project description goes here.</p>
-            </article>
 
-            <article class="project-card">
-                <div class="cross-box-container">
-                    <article class="project-card">
-                        <div class="card-img-placeholder"><div class="cross-box"></div></div>
-                        <h3>&lt;h3&gt;</h3>
-                        <span class="tag">&lt;h&gt;</span>
-                        <p>&lt;p&gt; Project description goes here.</p>
-                    </article>
-                </div>
-            </article>
+    <h4>Recipe Details</h4>
 
-            <article class="project-card">
-                <div class="card-img-placeholder"><div class="cross-box"></div></div>
-                <h3>&lt;h3&gt;</h3>
-                <span class="tag">&lt;h&gt;</span>
-                <p>&lt;p&gt; Project description goes here.</p>
-            </article>
+    <table>
 
-            <article class="project-card">
-                <div class="card-img-placeholder"><div class="cross-box"></div></div>
-                <h3>&lt;h3&gt;</h3>
-                <span class="tag">&lt;h&gt;</span>
-                <p>&lt;p&gt; Project description goes here.</p>
-            </article>
+        <thead>
 
-            <article class="project-card">
-                <div class="card-img-placeholder"><div class="cross-box"></div></div>
-                <h3>&lt;h3&gt;</h3>
-                <span class="tag">&lt;h&gt;</span>
-                <p>&lt;p&gt; Project description goes here.</p>
-            </article>
-        </div>
-    </section>
+            <tr>
 
-    <footer>
-        <div class="footer-logo">
-            <div class="cross-box"></div>
-        </div>
-        <div class="footer-links">
-            <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </div>
-    </footer>
+                <th>Ingredient</th>
+
+                <th>Quantity</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Chicken or Pork</td>
+
+                <td>1 kg</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Soy Sauce</td>
+
+                <td>1/2 cup</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Vinegar</td>
+
+                <td>1/2 cup</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Garlic</td>
+
+                <td>6 cloves</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Bay Leaves</td>
+
+                <td>3 leaves</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Peppercorns</td>
+
+                <td>1 tsp</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+
+    <div class="meta-info">
+
+        <p><b>Preparation Time:</b> 45 minutes</p>
+
+        <p><b>Serving Suggestion:</b> Best enjoyed with steamed white rice and a side of pickled vegetables.</p>
+
+    </div>
+
+
+
+</div>
+
+
 
 </body>
+
 </html>
